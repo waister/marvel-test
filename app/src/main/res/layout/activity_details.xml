@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".ui.activity.DetailsActivity">
+
+        <RelativeLayout
+            android:id="@+id/ly_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="160dp"
+                android:layout_height="228dp"
+                android:layout_marginEnd="16dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/movie_poster"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/no_image_72dp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/iv_poster"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                tools:text="Movie title (Year)" />
+
+            <TextView
+                android:id="@+id/tv_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/iv_poster"
+                android:textColor="@color/colorTextSecondary"
+                tools:text="Action, Adventure, Sci-Fi" />
+
+            <TextView
+                android:id="@+id/tv_plot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_genre"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/iv_poster"
+                android:textColor="@color/colorTextSecondary"
+                tools:text="Long text about the movie" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vw_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ly_header"
+            android:background="@color/colorDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vw_separator"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_released"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextSecondary"
+                tools:text="Released: 01 Jan 2000" />
+
+            <TextView
+                android:id="@+id/tv_runtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorTextSecondary"
+                tools:text="Runtime: 10 minutes" />
+
+            <TextView
+                android:id="@+id/tv_director"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorTextSecondary"
+                tools:text="Directors: Name 1, Name 2..." />
+
+            <TextView
+                android:id="@+id/tv_actors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorTextSecondary"
+                tools:text="Actors: Name 1, Name 2..." />
+
+            <TextView
+                android:id="@+id/tv_writer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorTextSecondary"
+                tools:text="Writers: Name 1, Name 2..." />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:focusable="true"
+    android:padding="16dp"
+    tools:context=".ui.activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_poster"
+        android:layout_width="50dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/movie_poster"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/no_image_72dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@+id/iv_poster"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
+        tools:text="Movie title" />
+
+    <TextView
+        android:id="@+id/tv_released"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@+id/iv_poster"
+        android:textColor="@color/colorText"
+        tools:text="Movie release" />
+
+    <ImageView
+        android:id="@+id/iv_drag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/movie_poster"
+        android:padding="10dp"
+        android:src="@drawable/drag_indicator_black_18dp" />
+
+</RelativeLayout>

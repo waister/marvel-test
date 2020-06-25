@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Marvel</string>
+    <string name="app_title">Marvel Movies</string>
+
+    <string name="unknown_error">The application was unable to communicate with the server :(</string>
+    <string name="try_again">Try again</string>
+    <string name="movie_poster">Movie poster</string>
+    <string name="movie_details">Movie details</string>
+    <string name="released">Release date of: %1$s</string>
+    <string name="runtime">Runtime: %1$s</string>
+    <string name="director">Directors: %1$s</string>
+    <string name="actors">Actors: %1$s</string>
+    <string name="writer">Writers: %1$s</string>
+    <string name="search">Search</string>
+</resources>

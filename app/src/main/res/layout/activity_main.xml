@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/pb_updating"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-6dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/unknown_error"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_error_message"
+        android:layout_centerInParent="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/try_again"
+        android:textAllCaps="false"
+        android:textColor="@color/colorButton"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/pb_downloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Marvel</string>
+    <string name="app_title">Filmes da Marvel</string>
+
+    <string name="unknown_error">O aplicativo não conseguiu se comunicar com o servidor :(</string>
+    <string name="try_again">Tentar novamente</string>
+    <string name="movie_poster">Poster do filme</string>
+    <string name="movie_details">Detalhes do filme</string>
+    <string name="released">Data de lançamento: %1$s</string>
+    <string name="runtime">Tempo de execução: %1$s</string>
+    <string name="director">Diretor: %1$s</string>
+    <string name="actors">Atores: %1$s</string>
+    <string name="writer">Escritores: %1$s</string>
+    <string name="search">Pesquisar</string>
+</resources>
